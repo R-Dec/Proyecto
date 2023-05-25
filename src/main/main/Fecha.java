@@ -1,8 +1,11 @@
 package main;
 
 public class Fecha {
-	int hora,minuto;
-	int dia,mes,ano;
+	int hora;
+	int minuto;
+	int dia;
+	int mes;
+	int ano;
 	
 	public Fecha(int _dia,int _mes,int _ano)//Mira mamá, puse un comentario
 	{
