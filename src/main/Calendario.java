@@ -1,5 +1,4 @@
 package main;
-
 import java.util.ArrayList;
 import java.io.File;
 import java.io.FileWriter;
@@ -7,11 +6,12 @@ import java.io.IOException;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import com.jcraft.jsch.*;
+
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.time.format.DateTimeFormatter;  
 import java.time.LocalDateTime;
-//es un comentario nuevo
+
 public class Calendario {
 	String id;
 	ArrayList<Evento> eventos;
@@ -132,7 +132,7 @@ public class Calendario {
 
 	public static int getDiasMes(int anno, int mes)
 	{
-		switch (mes)//distribuido
+		switch (mes)
 		{
 			case 1:
 				return 31;
@@ -253,7 +253,7 @@ public class Calendario {
 			return null;
 		for (Evento e : this.eventos)	
 		{
-			if ((e.getFecha().getMonth()) == mes)
+			if ((e.getFecha().getMes()) == mes)
 				lista.add(e);
 		}
 		return lista;
@@ -267,7 +267,7 @@ public class Calendario {
 			return null;
 		for (Evento e : this.eventos)	
 		{
-			if (e.getFecha().getAnno() == f.getAnno() && e.getFecha().getMonth() == f.getMonth() && e.getFecha().getDia() == f.getDia())
+			if (e.getFecha().getAnno() == f.getAnno() && e.getFecha().getMes() == f.getMes() && e.getFecha().getDia() == f.getDia())
 				lista.add(e);
 		}
 		return lista;

@@ -1,5 +1,4 @@
 package main;
-
 import java.io.IOException;
 import java.awt.*;
 import java.awt.event.*;
@@ -22,7 +21,7 @@ public class Ventana {
         f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); 
         //f.setIconImage(image); 
     }
-     //NUEVA VENTANA DE EVENTO 
+
     public void muestra()
     {
         GridBagConstraints ajustesPrincipal; 
@@ -162,7 +161,7 @@ public class Ventana {
         {
             for (Evento iter : c.getEventosMes(mes))
             {
-               bDias[iter.getFecha().getDay()].setBackground(Color.BLACK);
+               bDias[iter.getFecha().getDia()].setBackground(Color.BLACK);
             }
         }
         
