@@ -7,22 +7,22 @@ public class Fecha {
 	int mes;
 	int ano;
 	
-	public Fecha(int _dia,int _mes,int _ano)//Mira mamá, puse un comentario
+	public Fecha(int day,int month,int year)
 	{
-		dia = _dia; mes = _mes; ano = _ano;
+		dia = day; mes = month; ano = year;
 		hora = 0;
 		minuto = 0;
 	}
 	
-	public Fecha(int _hora, int _minuto, int _dia,int _mes,int _ano)
+	public Fecha(int hour, int minute, int day,int month,int year)
 	{
-		dia = _dia; mes = _mes; ano = _ano;
-		hora = _hora; minuto = _minuto;
+		dia = day; mes = month; ano = year;
+		hora = hour; minuto = minute;
 	}
 	
-	public void setFecha(int _dia, int _mes, int _ano){dia = _dia; mes = _mes; ano = _ano;}
+	public void setFecha(int day, int month, int year){dia = day; mes = month; ano = year;}
 	
-	public void setHora(int _hora, int _minuto){hora = _hora; minuto = _minuto;}
+	public void setHora(int hour, int minute){hora = hour; minuto = minute;}
 	
 	public int getAnno(){return ano;}
 	public int getMes(){return mes;}

@@ -1,23 +1,24 @@
 package main;
 
 public class Evento {
-	String nombre, comentario;
+	String nombre; 
+	String comentario;
 	Fecha fecha;
 	int importancia;
 	
-	public Evento(String _nombre, Fecha _fecha, String _comentario, int _importancia)
+	public Evento(String name, Fecha date, String comment, int importance)
 	{
-		nombre = _nombre;
-		fecha = _fecha;
-		comentario = _comentario;
-		importancia = _importancia;
+		nombre = name;
+		fecha = date;
+		comentario = comment;
+		importancia = importance;
 	}
 	
-	public void setComentario(String _comentario){comentario = _comentario;}
+	public void setComentario(String comment){comentario = comment;}
 	
-	public void setNombre(String _nombre){nombre = _nombre;}
+	public void setNombre(String name){nombre = name;}
 	
-	public void setFecha(Fecha _fecha){fecha = _fecha;}
+	public void setFecha(Fecha date){fecha = date;}
 	
 	public String getComentario(){return comentario;}
 	
