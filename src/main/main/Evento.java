@@ -6,6 +6,8 @@ public class Evento {
 	Fecha fecha;
 	int importancia;
 
+	//Constructor
+	//Parámetros: name, date, comment y importance
 	public Evento(String name, Fecha date, String comment, int importance) {
 		nombre = name;
 		fecha = date;

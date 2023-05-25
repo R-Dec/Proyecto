@@ -1,12 +1,16 @@
 package main;
 
+//Declaración de la clase Fecha
 public class Fecha {
+	//Variables de instancia
 	int hora;
 	int minuto;
 	int dia;
 	int mes;
 	int anual;
 
+	// Primer constructor de la clase
+	//Parámetros: day, month y year
 	public Fecha(int day, int month, int year) {
 		dia = day;
 		mes = month;
@@ -15,6 +19,8 @@ public class Fecha {
 		minuto = 0;
 	}
 
+	//Segundo constructor de la clase
+	//Parámetros: hour, minute, day, month y year
 	public Fecha(int hour, int minute, int day, int month, int year) {
 		dia = day;
 		mes = month;
@@ -23,34 +29,36 @@ public class Fecha {
 		minuto = minute;
 	}
 
-	public void setFecha(int day, int month, int year) {
+	public void setDate(int day, int month, int year) {
 		dia = day;
 		mes = month;
 		anual = year;
 	}
 
-	public void setHora(int hour, int minute) {
+	public void setHour(int hour, int minute) {
 		hora = hour;
 		minuto = minute;
 	}
 
-	public int getAnno() {
+	public int getYear() {
 		return anual;
 	}
 
-	public int getMes() {
+	public int getMonth() {
 		return mes;
 	}
 
-	public int getDia() {
+	public int getDay() {
 		return dia;
 	}
 
-	public String getFecha() {
+	//Plantilla: dia/mes/año
+	public String getDate() {
 		return String.format("%d/%d/%d", dia, mes, anual);
 	}
 
-	public String getHora() {
+	//Plantilla: hora/minuto
+	public String getHour() {
 		return String.format("%d:%d", hora, minuto);
 	}
 }
