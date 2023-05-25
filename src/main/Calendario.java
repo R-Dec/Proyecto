@@ -130,7 +130,7 @@ public class Calendario {
 
 	public static int getDiasMes(int anno, int mes)
 	{
-		switch (mes)
+		switch (mes)//distribuido
 		{
 			case 1:
 				return 31;
