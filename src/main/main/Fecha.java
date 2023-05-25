@@ -1,3 +1,5 @@
+package main;
+
 public class Fecha {
 	int hora,minuto;
 	int dia,mes,ano;

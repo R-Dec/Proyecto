@@ -1,3 +1,5 @@
+package main;
+
 public class Evento {
 	String nombre, comentario;
 	Fecha fecha;
