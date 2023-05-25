@@ -2,7 +2,7 @@ public class Fecha {
 	int hora,minuto;
 	int dia,mes,ano;
 	
-	public Fecha(int _dia,int _mes,int _ano)
+	public Fecha(int _dia,int _mes,int _ano)//Mira mamá, puse un comentario
 	{
 		dia = _dia; mes = _mes; ano = _ano;
 		hora = 0;
