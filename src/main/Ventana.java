@@ -20,7 +20,7 @@ public class Ventana {
         f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); 
         //f.setIconImage(image); 
     }
-
+     //NUEVA VENTANA DE EVENTO 
     public void muestra()
     {
         GridBagConstraints ajustesPrincipal; 
