@@ -162,7 +162,7 @@ public class Ventana {
         {
             for (Evento iter : c.getEventosMes(mes))
             {
-               bDias[iter.getFecha().getDia()].setBackground(Color.BLACK);
+               bDias[iter.getFecha().getDay()].setBackground(Color.BLACK);
             }
         }
         

@@ -253,7 +253,7 @@ public class Calendario {
 			return null;
 		for (Evento e : this.eventos)	
 		{
-			if ((e.getFecha().getMes()) == mes)
+			if ((e.getFecha().getMonth()) == mes)
 				lista.add(e);
 		}
 		return lista;
@@ -267,7 +267,7 @@ public class Calendario {
 			return null;
 		for (Evento e : this.eventos)	
 		{
-			if (e.getFecha().getAnno() == f.getAnno() && e.getFecha().getMes() == f.getMes() && e.getFecha().getDia() == f.getDia())
+			if (e.getFecha().getAnno() == f.getAnno() && e.getFecha().getMonth() == f.getMonth() && e.getFecha().getDia() == f.getDia())
 				lista.add(e);
 		}
 		return lista;
