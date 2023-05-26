@@ -20,7 +20,7 @@ public class Ventana {
         }});              
         f.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE); 
         //f.setIconImage(image); 
-    }  
+    }
 
     public void muestra()
     {
@@ -28,7 +28,7 @@ public class Ventana {
         String temp;
         String[] hoy;
         Calendario c;
-        
+
         principal=new JPanel(new GridBagLayout());
         principal.setBackground(new Color(16,16,16,255));
         principal.setOpaque(true);
@@ -76,7 +76,7 @@ public class Ventana {
         t.removeAll();
         f.revalidate();
         f.repaint();
-        /opciones
+
         temp = Calendario.getFechaActual();  
         hoy = temp.split("/");
 
@@ -122,7 +122,7 @@ public class Ventana {
         gbc.gridy = 0;  
         l = new JLabel(String.format("%d",anno));
         p.add(l, gbc);  
-        /dia, anno, mes
+       
         ndias = Calendario.getDiasMes(anno,mes);
         i = Calendario.getDiaSemana(anno, mes, 1);
         z=0;
@@ -162,7 +162,6 @@ public class Ventana {
             for (Evento iter : c.getEventosMes(mes))
             {
                bDias[iter.getFecha().getDia()].setBackground(Color.BLACK);
-               /definidos por colores
             }
         }
         
@@ -180,7 +179,7 @@ public class Ventana {
         t.removeAll();
         f.revalidate();
         f.repaint(); 
-        /opciones
+         
         gbc.fill = GridBagConstraints.HORIZONTAL;  
         gbc.insets = new Insets(5,5,5,5);
 
@@ -242,7 +241,7 @@ public class Ventana {
         t.removeAll();
         f.revalidate();
         f.repaint(); 
-        /opciones
+
         gbc.fill = GridBagConstraints.HORIZONTAL;  
         gbc.insets = new Insets(5,5,5,5);
         gbc.gridx = 0;  
@@ -268,7 +267,7 @@ public class Ventana {
         gbc.gridwidth = 3;
         tN = new JTextField("Nombre");
         t.add(tN,gbc);
-        /Ingresar Nombre
+
         gbc.gridx = 0;  
         gbc.gridy = 2;  
         gbc.gridwidth = 1;
@@ -312,9 +311,8 @@ public class Ventana {
                     c.exportarCalendario("/home/danih/.config/calendario");
                 } catch (IOException e1) {
                     e1.printStackTrace();
-                } 
+                }
                 MenuDia(fecha,c);
-                /Clasificado por fecha, hora 
             }
         });
         t.add(bt,gbc);
